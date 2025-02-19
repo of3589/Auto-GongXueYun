@@ -37,7 +37,7 @@ def save_user_info(
         "device": device,
         "longitude": longitude,
     }
-    url = "https://api.moguding.net:9000/attendence/clock/v2/save"
+    url = "https://api.moguding.net:9000/attendence/clock/v5/save"
     res = requests.post(url=url, headers=headers, data=json.dumps(data))
     # 检查响应是否有效
     try:
